@@ -1,0 +1,18 @@
+[tools]
+betterleaks = "1.7.4"
+ghalint = "1.5.6"
+node = "26.7.0"
+pnpm = "11.22.0"
+
+[tasks.check]
+run = [
+  "betterleaks git --no-banner",
+  "pnpm audit",
+  "pnpm exec tsc --noEmit",
+  "pnpm exec oxfmt --check --no-error-on-unmatched-pattern",
+  "pnpm exec oxlint --no-error-on-unmatched-pattern",
+  "ghalint run",
+]
+
+[tasks.fix]
+run = ["pnpm exec oxlint --fix --fix-suggestions", "pnpm exec oxfmt --write"]
