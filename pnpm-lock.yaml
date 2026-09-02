@@ -211,6 +211,9 @@ importers:
         specifier: 4.5.4
         version: 4.5.4
     devDependencies:
+      '@mewisland/ts-configs':
+        specifier: 1.0.0
+        version: 1.0.0(@stylistic/eslint-plugin@5.10.0(eslint@10.8.1))(oxfmt@0.65.0)(oxlint@1.80.0(oxlint-tsgolint@7.0.2001))
       '@stylistic/eslint-plugin':
         specifier: 5.10.0
         version: 5.10.0(eslint@10.8.1)
@@ -290,6 +293,13 @@ packages:
 
   '@jridgewell/sourcemap-codec@1.6.0':
     resolution: {integrity: sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==}
+
+  '@mewisland/ts-configs@1.0.0':
+    resolution: {integrity: sha512-27rP3fKMW6TdaYh9wddHAwJ9niYf4thraAFXOBdijQeHsauVSTU70SzP6npm647kMnonD3BWozmP4lfTeX7rWw==}
+    peerDependencies:
+      '@stylistic/eslint-plugin': 5.10.0
+      oxfmt: 0.65.0
+      oxlint: 1.80.0
 
   '@oxc-project/types@0.144.0':
     resolution: {integrity: sha512-nuhZIOLuI6TFQ32I/WnUx+SCPY7SdSKwgnFHydAuoS1+Z4BRcaP+RRJmGzl9lw+0OFF7UmaESf7KQRXaNLHypg==}
@@ -1244,10 +1254,6 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
-  picomatch@4.0.5:
-    resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
-    engines: {node: '>=12'}
-
   picomatch@4.0.7:
     resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
     engines: {node: '>=12'}
@@ -1478,6 +1484,12 @@ snapshots:
   '@humanwhocodes/retry@0.4.3': {}
 
   '@jridgewell/sourcemap-codec@1.6.0': {}
+
+  '@mewisland/ts-configs@1.0.0(@stylistic/eslint-plugin@5.10.0(eslint@10.8.1))(oxfmt@0.65.0)(oxlint@1.80.0(oxlint-tsgolint@7.0.2001))':
+    dependencies:
+      '@stylistic/eslint-plugin': 5.10.0(eslint@10.8.1)
+      oxfmt: 0.65.0
+      oxlint: 1.80.0(oxlint-tsgolint@7.0.2001)
 
   '@oxc-project/types@0.144.0': {}
 
@@ -1916,9 +1928,9 @@ snapshots:
 
   fast-levenshtein@2.0.6: {}
 
-  fdir@6.5.0(picomatch@4.0.5):
+  fdir@6.5.0(picomatch@4.0.7):
     optionalDependencies:
-      picomatch: 4.0.5
+      picomatch: 4.0.7
 
   file-entry-cache@8.0.0:
     dependencies:
@@ -2163,8 +2175,6 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  picomatch@4.0.5: {}
-
   picomatch@4.0.7: {}
 
   postcss@8.5.26:
@@ -2217,8 +2227,8 @@ snapshots:
 
   tinyglobby@0.2.17:
     dependencies:
-      fdir: 6.5.0(picomatch@4.0.5)
-      picomatch: 4.0.5
+      fdir: 6.5.0(picomatch@4.0.7)
+      picomatch: 4.0.7
 
   tinypool@2.1.0: {}
 
@@ -2260,7 +2270,7 @@ snapshots:
   vite@8.2.1(@types/node@26.4.0):
     dependencies:
       lightningcss: 1.33.0
-      picomatch: 4.0.5
+      picomatch: 4.0.7
       postcss: 8.5.26
       rolldown: 1.2.4
       tinyglobby: 0.2.17

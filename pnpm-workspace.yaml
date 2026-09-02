@@ -1,4 +1,7 @@
 allowBuilds:
   lefthook: true
 
-savePrefix: ''
+minimumReleaseAgeExclude:
+  - "@mewisland/ts-configs@1.0.0"
+
+savePrefix: ""
