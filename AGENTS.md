@@ -14,11 +14,14 @@
 - Use the toolchain commands defined in [mise.toml](./mise.toml) for all local command execution.
 
 ```shell
-# Check files in the repository
+# Check code quality
 mise tasks run check
 
-# Fix files in the repository
+# Fix lint and formatting issues
 mise tasks run fix
+
+# Build
+mise tasks run build
 
 # Run tests
 pnpm test
