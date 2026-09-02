@@ -1,7 +1,15 @@
-allowBuilds:
-  lefthook: true
+update:
+  changeset: true
+  githubActions: true
 
 minimumReleaseAgeExclude:
   - "@mewisland/ts-configs@1.0.0"
+
+allowBuilds:
+  lefthook: true
+
+versioning:
+  changelog:
+    storage: repository
 
 savePrefix: ""
