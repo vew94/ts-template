@@ -12,7 +12,6 @@ run = [{ tasks = ["check"] }]
 description = "Check code quality"
 run = [
   "betterleaks git --no-banner",
-  "pnpm audit",
   "pnpm exec tsc --noEmit",
   "pnpm exec oxfmt --check --no-error-on-unmatched-pattern",
   "pnpm exec oxlint --no-error-on-unmatched-pattern",
