@@ -13,3 +13,8 @@ versioning:
     storage: repository
 
 savePrefix: ""
+
+cargo:
+  enabled: true
+python:
+  enabled: true
