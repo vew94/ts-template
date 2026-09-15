@@ -2,7 +2,7 @@
 betterleaks = "1.8.1"
 ghalint = "1.5.6"
 node = "26.8.1"
-pnpm = "11.25.0"
+pnpm = "12.4.1"
 
 [tasks.build]
 description = "Build"
